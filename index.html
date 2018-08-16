@@ -11,6 +11,16 @@
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
 <script src="/js/mdui.min.js"></script>
 <script>
+mdui.snackbar({
+  message: 'Updated on August 13th <2018-08-13>',
+  timeout: '5000',
+  closeOnOutsideClick: 'false',
+  buttonText: 'Close',
+  buttonColor: "#4caf50"
+});
+</script>
+<script>
+<script>
 function blog(){
     window.location.href='https://riohsc.coding.me';
 }
@@ -37,7 +47,7 @@ function ssr(){
 </script>
 <script>
 function v2ray(){
-    window.location.href='/';
+    window.location.href='vmess://eyJhZGQiOiJmZ3EtYy52MnJheS53b3JsZCIsImFpZCI6IjY0IiwiaG9zdCI6IiIsImlkIjoiZGViYjI2NjAtM2U4Zi00NDVlLWE0OTQtMzM1OWQ3ZTAwOGZhIiwibmV0IjoiaDIiLCJwYXRoIjoiL3NldmVyIiwicG9ydCI6IjQ0MyIsInBzIjoiSW9wIEEiLCJ0bHMiOiJ0bHMiLCJ0eXBlIjoibm9uZSIsInYiOiIyIn0=';
 }
 </script>
 <div class="mdui-container">
@@ -47,9 +57,9 @@ function v2ray(){
 <div class="mdui-typo-display-1 mdui-text-center mdui-text-color-green">Over the wall Profiles</div>
 <div class="mdui-typo mdui-text-center"><p>This page is powered by <a class="mdui-text-color-green-700" href="https://riohsc.coding.me">RioHsc</a></p></div>
 <h1></h1>
-<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center" onclick="ssr()" disabled>Click to add SSR profiles</button>
+<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center mdui-btn-block" onclick="ssr()" disabled>Click to add SSR profiles</button>
 <h1></h1>
-<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center" onclick="v2ray()" disabled>Click to add V2ray profiles</button>
+<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center mdui-btn-block" onclick="v2ray()">Click to add V2ray profiles</button>
 <h1></h1>
 <div class="mdui-typo">
   <hr/>
