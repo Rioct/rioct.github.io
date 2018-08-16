@@ -33,9 +33,9 @@ function v2ray(){
 
 </div>
 <div class="mdui-bottom-nav">
-  <a href="javascript:;" class="mdui-ripple mdui-bottom-nav-active mdui-bottom-nav-scroll-hide">
-    <i class="mdui-icon material-icons">plane</i>
-    <label>SSR</label>
+  <a href="javascript:;" class="mdui-ripple mdui-bottom-nav-active">
+    <i class="mdui-icon material-icons">history</i>
+    <label>Recents</label>
   </a>
   <a href="javascript:;" class="mdui-ripple">
     <i class="mdui-icon material-icons">favorite</i>
