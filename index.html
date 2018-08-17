@@ -11,6 +11,14 @@
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed" onload="load()">
 <script src="/js/mdui.min.js"></script>
 <script>
+function about(){
+var nHeight = frm.document.body.clientHeight
+var oEle = document.getElementById("oWnd")
+oEle.style.height = nHeight + 'px'
+}
+</script>
+<iframe id="frm" src="/about" onload="about()"></iframe>
+<script>
 mdui.snackbar({
   message: 'Updated on August 17th <2018-08-17>',
   timeout: '6000',
@@ -80,7 +88,7 @@ function v2ray(){
     <i class="mdui-icon material-icons">queue_music</i>
     <label>Music</label>
   </a>
-  <a href="/about" class="mdui-ripple">
+  <a class="mdui-ripple" onclick="about()">
     <i class="mdui-icon material-icons">perm_identity</i>
     <label>About</label>
   </a>
