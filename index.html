@@ -10,7 +10,7 @@
 </head>
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
 <script src="/js/mdui.min.js"></script>
-<div class="mdui-progress pageload() closeElement()" id="loading">
+<div class="mdui-progress" id="loading">
   <div class="mdui-progress-indeterminate"></div>
 </div>
 <script>
@@ -20,7 +20,7 @@ function pageload(){
  setTimeout(closeElement, 3000);
 }
 function closeElement(){
-document.getElement("loading").style.display='none';
+document.getElement("#loading").style.display='none';
 }
 </script>
 <script>
