@@ -8,19 +8,11 @@
 <meta name="format-detection" content="telephone=no">
 <link href="/css/mdui.min.css" rel="stylesheet">
 </head>
-<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed" onload="pageload() closeElement()">
+<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed" onload="load()">
 <script src="/js/mdui.min.js"></script>
-<div class="mdui-progress">
-  <div id="loading" class="mdui-progress-indeterminate"></div>
-</div>
 <script>
-window.onload = pageload
-
-function pageload(){
- setTimeout(closeElement, 3000);
-}
-function closeElement(){
-document.getElement("loading").style.display='none';
+function load(){
+    $$.showOverlay();
 }
 </script>
 <script>
@@ -32,7 +24,6 @@ mdui.snackbar({
   buttonColor: "#4caf50"
 });
 </script>
-<script>
 <script>
 function blog(){
     window.location.href='https://riohsc.coding.me';
