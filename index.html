@@ -86,7 +86,7 @@ function v2ray(){
 <div class="mdui-typo-subheading-opacity mdui-text-center">Click the button below to join!
 <strong class="mdui-text-color-pink">[ Only CoolAPK friends ]</strong></div>
 <h1></h1>
-<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-400 mdui-ripple-green mdui-center" onclick="telegram()">Join</button>
+<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-400 mdui-ripple-green mdui-center" mdui-dialog="{target: '#p'}">Join</button>
 <h1></h1>
 <div class="mdui-typo">
   <hr/>
@@ -108,12 +108,20 @@ function v2ray(){
   <a href="#music" class="mdui-ripple">
     <i class="mdui-icon material-icons">queue_music</i>
     <label>Music</label>
-    <p>test</p>
   </a>
   <a href="#about" class="mdui-ripple">
     <i class="mdui-icon material-icons">perm_identity</i>
     <label>About</label>
   </a>
+</div>
+
+<div class="mdui-dialog" id="p">
+  <div class="mdui-dialog-title">Are you sure?</div>
+  <div class="mdui-dialog-content">test</div>
+  <div class="mdui-dialog-actions">
+    <button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
+    <button class="mdui-btn mdui-ripple" mdui-dialog-confirm onclick="telegram()">ok</button>
+  </div>
 </div>
 
 </body>
