@@ -56,7 +56,7 @@ function v2ray(){
     window.location.href='/';
 }
 </script>
-<div class="mdui-toolbar mdui-color-theme" style="background-color: white;">
+<div class="mdui-toolbar mdui-color-theme" style="background-color: white;"> 
 <div class="mdui-container">
 <h1></h1>
 <div class="mdui-shadow-1">
@@ -70,7 +70,6 @@ function v2ray(){
 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center mdui-btn-block" onclick="ssr()">Click to add SSR profiles</button>
 <h1></h1>
 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center mdui-btn-block" onclick="v2ray()" disabled>Click to add V2ray profiles</button>
-</div>
 <h1></h1>
 <div class="mdui-typo">
   <hr/>
