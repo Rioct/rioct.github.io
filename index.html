@@ -7,8 +7,17 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="format-detection" content="telephone=no">
 <link href="/css/mdui.min.css" rel="stylesheet">
+
+<script>
+function red(){
+var tab = new mdui.Tab('#example4-tab');
+  document.getElementById('example-4').addEventListener('open.mdui.dialog', function () {
+    tab.handleUpdate();
+  });
+}
+</script>
 </head>
-<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
+<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed" onload="red()">
 <script src="/js/mdui.min.js"></script>
 
 <script>
@@ -138,6 +147,38 @@ function v2ray(){
   <div class="mdui-dialog-actions">
     <button class="mdui-btn mdui-ripple" mdui-dialog-close>cancel</button>
     <button class="mdui-btn mdui-ripple" mdui-dialog-confirm onclick="telegram()">sure</button>
+  </div>
+</div>
+
+<div class="mdui-dialog" id="Red">
+  <div class="mdui-tab mdui-tab-full-width" id="example4-tab">
+    <a href="#example4-tab1" class="mdui-ripple">web</a>
+    <a href="#example4-tab2" class="mdui-ripple">shopping</a>
+    <a href="#example4-tab3" class="mdui-ripple">videos</a>
+  </div>
+  <div id="example4-tab1" class="mdui-p-a-2">
+    <p>tab 1</p>
+    <p>tab 1</p>
+    <p>tab 1</p>
+    <p>tab 1</p>
+    <p>tab 1</p>
+    <p>tab 1</p>
+  </div>
+  <div id="example4-tab2" class="mdui-p-a-2">
+    <p>tab 2</p>
+    <p>tab 2</p>
+    <p>tab 2</p>
+    <p>tab 2</p>
+    <p>tab 2</p>
+    <p>tab 2</p>
+  </div>
+  <div id="example4-tab3" class="mdui-p-a-2">
+    <p>tab 3</p>
+    <p>tab 3</p>
+    <p>tab 3</p>
+    <p>tab 3</p>
+    <p>tab 3</p>
+    <p>tab 3</p>
   </div>
 </div>
 
