@@ -52,6 +52,11 @@ var tab = new mdui.Tab('#example4-tab');
 }
 </script>
 
+<script type="text/javascript"> window.onload=function(){ var tab = new mdui.Tab('#example4-tab');
+  document.getElementById('example-4').addEventListener('open.mdui.dialog', function () {
+    tab.handleUpdate();
+  }); } </script> 
+
 <script>
 mdui.snackbar({
   message: 'Updated on August 17th <2018-08-17>',
