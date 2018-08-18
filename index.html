@@ -10,26 +10,6 @@
 </head>
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
 <script src="/js/mdui.min.js"></script>
-
-<div class="mdui-dialog" id="Redcore-iop">
-  <div class="mdui-tab mdui-tab-full-width" id="Redcore">
-    <a href="#redcore" class="mdui-ripple">Redcore</a>
-  </div>
-  <div id="redcore" class="mdui-p-a-2">
-    <div class="mdui-ripple">
-<h1></h1>
-<img class="mdui-center" src="/img/Redcore.gif" alt="Redcore">
-</div>
-  </div>
-</div>
-
-<script>
-  var tab = new mdui.Tab('#Redcore');
-  document.getElementById('Redcore-iop').addEventListener('open.mdui.dialog', function () {
-    tab.handleUpdate();
-  });
-</script>
-
 <script>
 mdui.snackbar({
   message: 'Updated on August 17th <2018-08-17>',
@@ -130,7 +110,7 @@ function v2ray(){
 <h1></h1>
 <div class="mdui-typo-subheading-opacity mdui-text-center">Click the button below to enter my blog.</div>
 <h1></h1>
-<button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-400 mdui-ripple-green mdui-center" onclick="blog()">Enter</button>
+<button href="https://riohsc.coding.me/" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-400 mdui-ripple-green mdui-center" onclick="blog()">Enter</button>
 <h1></h1>
 </div>
 
