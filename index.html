@@ -8,7 +8,7 @@
 <meta name="format-detection" content="telephone=no">
 <link href="/css/mdui.min.css" rel="stylesheet">
 </head>
-<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
+<body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed" onload="pop();">
 <script src="/js/mdui.min.js"></script>
 <script>
 mdui.snackbar({
@@ -20,12 +20,10 @@ mdui.snackbar({
 });
 </script>
 <script>
-<script>
 function newpage(){
     window.location.href='https://iopos.coding.me';
 }
 </script>
-<script>
 <script>
 function blog(){
     window.location.href='https://riohsc.coding.me';
@@ -89,10 +87,12 @@ function v2ray(){
 </div>
 
 <script>
+function pop(){
   var tab = new mdui.Tab('#example4-tab');
   document.getElementById('example-4').addEventListener('open.mdui.dialog', function () {
     tab.handleUpdate();
   });
+}
 </script>
 <div class="mdui-color-green" style="position:absolute; width:100vw; height:300px">
 <div class="mdui-container" style="padding-top:76px; padding-bottom:80px">
