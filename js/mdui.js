@@ -5368,8 +5368,8 @@
     var DEFAULT = {
       history: true,                // 监听 hashchange 事件
       overlay: true,                // 打开对话框时是否显示遮罩
-      modal: false,                 // 是否模态化对话框，为 false 时点击对话框外面区域关闭对话框，为 true 时不关闭
-      closeOnEsc: true,             // 按下 esc 关闭对话框
+      modal: true,                 // 是否模态化对话框，为 false 时点击对话框外面区域关闭对话框，为 true 时不关闭
+      closeOnEsc: false,             // 按下 esc 关闭对话框
       closeOnCancel: true,          // 按下取消按钮时关闭对话框
       closeOnConfirm: true,         // 按下确认按钮时关闭对话框
       destroyOnClosed: false,        // 关闭后销毁
