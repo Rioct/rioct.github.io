@@ -10,7 +10,23 @@
 </head>
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
 <script src="/js/mdui.min.js"></script>
-
+<script>
+mdui.dialog({
+  title: 'title',
+  content: 'content',
+  buttons: [
+    {
+      text: '取消'
+    },
+    {
+      text: '确认',
+      onClick: function(inst){
+        mdui.alert('点击确认按钮的回调');
+      }
+    }
+  ]
+});
+</script>
 <script>
 mdui.snackbar({
   message: 'Updated on August 17th <2018-08-17>',
