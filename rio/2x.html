@@ -11,28 +11,6 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="format-detection" content="telephone=no">
 <link href="/css/mdui.min.css" rel="stylesheet">
-<script src="/js/rtab.js"></script>
-    <script>
-        $(document).ready(function () {
-        $("#rio_2").hide();
-        $("#rio_3").hide();
-            $("#r1").click(function () {
-                $("#rio_1").show();
-                $("#rio_2").hide();
-                $("#rio_3").hide();
-            });
-            $("#r2").click(function () {
-                $("#rio_1").hide();
-                $("#rio_3").hide();
-                $("#rio_2").show();
-            });
-            $("#r3").click(function () {
-                $("#rio_1").hide();
-                $("#rio_2").hide();
-                $("#rio_3").show();
-            });
-        });
-    </script>
 </head>
 <body class="mdui-theme-primary-green mdui-theme-accent-green mdui-bottom-nav-fixed">
 <script src="/js/mdui.min.js"></script>
@@ -92,15 +70,12 @@ function v2ray(){
 }
 </script>
 
-<div>
-<div>
-<div id="rio_1">
-<div class="mdui-color-green" style="position:absolute; width:100vw; height:200px">
+<div class="mdui-color-green" style="position:absolute; width:100vw; height:300px">
 <div class="mdui-container" style="padding-top:76px; padding-bottom:80px">
 <div class="mdui-shadow-6 mdui-color-white">
 <div class="mdui-container">
 <div class="mdui-ripple">
-<img class="mdui-center" src="/img/ssr.png" alt="">
+<img class="mdui-center" src="/img/ssr1.png" alt="img">
 </div>
 <div class="mdui-typo-display-1 mdui-text-center mdui-text-color-green">Over the wall Profiles</div>
 <div class="mdui-typo mdui-text-center"><p>This page is powered by <a class="mdui-text-color-green-700" href="https://riohsc.coding.me">RioHsc</a></p></div>
@@ -111,40 +86,17 @@ function v2ray(){
 <h1></h1>
 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-a700 mdui-center mdui-btn-block" onclick="v2ray()" disabled>Click to add V2ray profiles</button>
 <h1></h1>
+<div class="mdui-typo">
+  <hr/>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="rio_2">
-<div class="mdui-color-green" style="position:absolute; width:100vw; height:200px">
-<div class="mdui-container" style="padding-top:76px; padding-bottom:80px">
-<div class="mdui-shadow-6 mdui-color-white">
-<div class="mdui-container">
-<div class="mdui-ripple">
-<img class="mdui-center" src="/img/music.png" alt="">
-</div>
-<h1></h1>
-<div class="mdui-typo-display-1 mdui-text-center mdui-text-color-green" id="music">Music</div>
-<h1></h1>
+<div class="mdui-typo-title mdui-text-center mdui-text-color-green" id="music">Music</div>
 <div class="mdui-typo-caption-opacity mdui-text-center">Listen to music</div>
 <h1></h1>
 <button class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-grey-400 mdui-ripple-green mdui-center" onclick="music()">GO</button>
 <h1></h1>
+<div class="mdui-typo">
+  <hr/>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div id="rio_3">
-<div class="mdui-color-green" style="position:absolute; width:100vw; height:200px">
-<div class="mdui-container" style="padding-top:76px; padding-bottom:80px">
-<div class="mdui-shadow-6 mdui-color-white">
-<div class="mdui-container">
-<div class="mdui-ripple">
-<img class="mdui-center" src="/img/about.png" alt="">
-</div>
-<h1></h1>
 <div class="mdui-typo-title mdui-text-center mdui-text-color-green" id="about">About this page</div>
 <h1></h1>
 <div class="mdui-chip mdui-center">
@@ -178,20 +130,18 @@ function v2ray(){
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
 
+</div>
 <div class="mdui-bottom-nav mdui-bottom-nav-scroll-hide mdui-color-blue-grey-50 mdui-text-color-green-700">
-  <a href="#" class="mdui-ripple mdui-bottom-nav-active" id="r1">
+  <a href="#" class="mdui-ripple mdui-bottom-nav-active">
     <i class="mdui-icon material-icons">flight</i>
     <label>Airport</label>
   </a>
-  <a href="#" class="mdui-ripple" id="r2">
+  <a href="#music" class="mdui-ripple">
     <i class="mdui-icon material-icons">queue_music</i>
     <label>Music</label>
   </a>
-  <a href="#" class="mdui-ripple" id="r3">
+  <a href="#about" class="mdui-ripple">
     <i class="mdui-icon material-icons">perm_identity</i>
     <label>About</label>
   </a>
